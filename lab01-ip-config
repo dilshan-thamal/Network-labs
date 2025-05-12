@@ -1,1 +1,38 @@
 
+# IP Configuration Troubleshooting
+
+## 🧰 Command Used
+```bash
+ipconfig /all  # (Windows)
+ifconfig       # (Linux)
+ip a           # (Linux)
+
+-----------------------------------
+
+## ✅ Example Output: Working Wireless Adapter
+
+🧪 ipconfig /all 
+
+	Windows IP Configuration
+
+   		Host Name . . . . . . . . . . . . : DESKTOP-USER
+   		Primary Dns Suffix  . . . . . . . : 
+   		Node Type . . . . . . . . . . . . : Hybrid
+   		IP Routing Enabled. . . . . . . . : No
+   		WINS Proxy Enabled. . . . . . . . : No
+
+	Wireless LAN adapter Wi-Fi:
+
+   		Description . . . . . . . . . . . : Intel(R) Dual Band Wireless-AC 3168
+   		Physical Address. . . . . . . . . : XX-XX-XX-XX-XX-XX
+   		DHCP Enabled. . . . . . . . . . . : Yes
+   		Autoconfiguration Enabled . . . . : Yes
+   		Link-local IPv6 Address . . . . . : fe80::1e39:8b72:ef07:321f%3
+   		IPv4 Address. . . . . . . . . . . : 192.168.1.106
+   		Subnet Mask . . . . . . . . . . . : 255.255.255.0
+   		Default Gateway . . . . . . . . . : 192.168.1.1
+   		DHCP Server . . . . . . . . . . . : 192.168.1.1
+   		DNS Servers . . . . . . . . . . . : 192.168.1.1
+                                       		    0.0.0.0
+   		NetBIOS over Tcpip. . . . . . . . : Enabled
+
