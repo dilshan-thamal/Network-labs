@@ -1,0 +1,48 @@
+# 📏 Subnetting Practice Lab
+
+This lab contains manual subnetting calculations based on a common network scenario. Subnetting helps divide a network into smaller, more manageable segments.
+
+--------------------------------------------------------------------------------------------------------------------------------------------------------------
+
+## 🧪 Scenario
+
+You are given the IP network `192.168.1.0/24` and asked to divide it into **4 equal subnets**.
+
+----------------------------------------------------------------------------------------------
+
+## 📐 Step-by-Step Calculation
+
+### Given:
+	- IP Block: `192.168.1.0/24`
+	- Total IPs: 256
+	- Required Subnets: 4
+
+### Step 1: Calculate New Subnet Mask
+	- You need 2 bits to create 4 subnets (2² = 4)
+	- New subnet mask: `/26` → `255.255.255.192`
+
+---
+
+## 🧮 Subnet Breakdown
+
+	| Subnet # | Network Address  | First Host    | Last Host     | Broadcast Address |
+	|----------|------------------|------------   |------------   |-------------------|
+	| Subnet 1 | 192.168.1.0/26   | 192.168.1.1   | 192.168.1.62  | 192.168.1.63      |
+	| Subnet 2 | 192.168.1.64/26  | 192.168.1.65  | 192.168.1.126 | 192.168.1.127     |
+	| Subnet 3 | 192.168.1.128/26 | 192.168.1.129 | 192.168.1.190 | 192.168.1.191     |
+	| Subnet 4 | 192.168.1.192/26 | 192.168.1.193 | 192.168.1.254 | 192.168.1.255     |
+
+---
+
+## 🧠 What I Learned
+
+	- Subnetting allows you to divide large networks into smaller sections.
+	- Calculating subnet masks, ranges, and broadcast addresses is essential for efficient IP management.
+	- `/26` subnet gives 64 IPs per subnet (62 usable addresses).
+
+---
+
+## ✅ Summary
+
+	-Subnetting is a foundational skill in networking. 
+	-This lab demonstrates how to manually divide a `/24` network into 4 equal `/26` subnets, calculate host ranges, and understand how subnetting supports efficient network design.
