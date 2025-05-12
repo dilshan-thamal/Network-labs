@@ -1,0 +1,55 @@
+
+# 🧪 DNS Troubleshooting Lab
+
+This lab demonstrates how to troubleshoot DNS issues using basic networking tools. DNS (Domain Name System) is responsible for resolving domain names (like google.com) into IP addresses.
+
+------------------------------------------
+
+## 🧰 Commands Used
+
+```bash
+	nslookup google.com
+	ipconfig /flushdns     # Windows
+	systemd-resolve --status  # Linux
+-------------------------------------------
+
+🧪 Output Example (Windows)
+
+	C:\> nslookup google.com
+
+	Server:  dns.google
+	Address:  8.8.8.8
+
+Non-authoritative answer:
+	Name:    google.com
+	Address: 142.250.217.206
+
+
+
+
+---------------------------------------------------------------------------------
+                    SCENARIO -01 
+---------------------------------------------------------------------------------
+*** Issue: User says they have internet but can’t access websites in browser. ***
+---------------------------------------------------------------------------------
+
+?? Steps to troubleshoot:
+
+	1.Run nslookup google.com
+
+	2.If it fails, DNS may be down or misconfigured.
+
+	3.Run ipconfig /flushdns
+
+	4.Clears local DNS cache.
+
+	5.If issue persists:
+
+	6.Change DNS to 8.8.8.8 (Google) or 1.1.1.1 (Cloudflare)
+-------------------------------------------------------------------------------
+
+
+✅ Summary
+	-DNS resolution is essential for accessing websites. 
+	-This lab shows how to verify if DNS is working, clear stale records, and change DNS settings if needed. 
+	-These are must-know skills for help desk and network roles.
