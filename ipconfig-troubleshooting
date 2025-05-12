@@ -1,0 +1,6 @@
+# Ping and Traceroute Lab
+
+## 🧰 Commands Used
+```bash
+ping google.com
+tracert google.com         # Windows
