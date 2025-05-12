@@ -1,0 +1,89 @@
+
+# 💻 Useful Windows CMD Commands for IT Help Desk & Networking
+
+This cheat sheet includes the most essential Command Prompt commands used in real-world IT support, networking, and system administration tasks.
+
+---
+
+## 🧑‍💻 SYSTEM INFO & USER MANAGEMENT
+
+| Command | Description |
+|---------|-------------|
+| `systeminfo` | View detailed OS info, uptime, memory, etc. |
+| `hostname` | Show computer name |
+| `whoami` | Show current logged-in user |
+| `net user` | List all local users |
+| `net user [username]` | Show details of a specific user |
+| `net localgroup administrators` | View users with admin rights |
+
+---
+
+## 🌐 NETWORKING & CONNECTIVITY
+
+| Command | Description |
+|---------|-------------|
+| `ipconfig /all` | Display full IP configuration |
+| `ipconfig /release` | Release current DHCP IP |
+| `ipconfig /renew` | Renew IP address |
+| `ipconfig /flushdns` | Clear DNS cache |
+| `ping [IP/domain]` | Test connectivity to a host |
+| `tracert [domain]` | Trace route to destination |
+| `nslookup [domain]` | Check DNS resolution |
+| `netstat -an` | Show all open ports & connections |
+| `arp -a` | View MAC address table |
+| `route print` | Display routing table |
+| `netsh interface ipv4 show config` | Show adapter-level IP settings |
+
+---
+
+## 🗂️ FILE & FOLDER MANAGEMENT
+
+| Command | Description |
+|---------|-------------|
+| `dir` | List files in current directory |
+| `cd [folder]` | Change directory |
+| `cd ..` | Go up one level |
+| `mkdir [folder]` | Create new folder |
+| `del [file]` | Delete a file |
+| `copy [src] [dest]` | Copy files |
+| `xcopy /s /e` | Copy folders & subfolders |
+| `cls` | Clear the screen |
+
+---
+
+## 🛠️ TROUBLESHOOTING & SYSTEM TOOLS
+
+| Command | Description |
+|---------|-------------|
+| `tasklist` | List running processes |
+| `taskkill /im [name].exe /f` | Kill a process |
+| `sfc /scannow` | Scan system files for corruption |
+| `chkdsk` | Check disk for file system errors |
+| `shutdown /r /t 0` | Restart PC immediately |
+| `gpupdate /force` | Force Group Policy update |
+| `eventvwr` | Open Event Viewer |
+| `services.msc` | Open Services Manager |
+
+---
+
+## 📡 NETWORK SHARES & REMOTE ACCESS
+
+| Command | Description |
+|---------|-------------|
+| `net share` | List shared folders |
+| `net view \\[host]` | View shared folders on a remote device |
+| `net use` | List or manage mapped drives |
+| `net use z: \\host\share` | Map a shared drive to letter Z: |
+
+---
+
+## 🛡️ Pro Tip
+
+Always **run Command Prompt as Administrator** for commands that require elevated access.  
+Right-click `cmd.exe` → **Run as administrator**
+
+---
+
+
+
+T
